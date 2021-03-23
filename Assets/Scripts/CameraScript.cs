@@ -4,31 +4,23 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    /*private float panningCam;
-    private float camSpeed;
-    private bool camPause = false;
+    public GameObject player;
+    public float xPos;
+    float fraction = 0.08f;
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(CameraPan());
+        xPos = this.transform.position.x;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (camPause)
-        {
-            camSpeed = 4 / Screen.width;
-            panningCam += camSpeed;
+        xPos = player.gameObject.transform.position.x;
 
-            this.transform.position = new Vector3(panningCam, this.transform.position.y, this.transform.position.z);
-        }
-        
+            Vector3 currentPos = this.gameObject.transform.position;
+            Vector3 des = player.gameObject.GetComponent<Transform>().position;
+            this.gameObject.transform.position = Vector3.Lerp(currentPos, new Vector3(xPos + 13, transform.position.y, transform.position.z), fraction);
     }
-
-    IEnumerator CameraPan()
-    {
-        yield return new WaitForSeconds(5);
-        camPause = true;
-    }*/
 }
