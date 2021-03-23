@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 1421552481}
   - component: {fileID: 1421552483}
   - component: {fileID: 1421552482}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -195, y: -133}
+  m_AnchoredPosition: {x: -195, y: -82}
   m_SizeDelta: {x: 472.39368, y: 281.9841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421552482
