@@ -11,7 +11,7 @@ public class WinScript : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D()
     {
         
             SceneManager.LoadScene("Win");
