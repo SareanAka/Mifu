@@ -117,13 +117,13 @@ public class CharacterController2D : MonoBehaviour
 			if (move > 0 && !m_FacingRight)
 			{
 				// ... flip the player.
-				Flip();
+				Flip(false);
 			}
 			// Otherwise if the input is moving the player left and the player is facing right...
 			else if (move < 0 && m_FacingRight)
 			{
 				// ... flip the player.
-				Flip();
+				Flip(true);
 			}
 		}
 		// If the player should jump...
@@ -136,14 +136,21 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	private void Flip()
+	private void Flip(bool theScale)
 	{
 		// Switch the way the player is labelled as facing.
 		m_FacingRight = !m_FacingRight;
 
-		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
+        // Multiply the player's x local scale by -1.
+        if (theScale)
+        {
+			GetComponentInChildren<SpriteRenderer>().flipX = true;
+		} else
+        {
+			GetComponentInChildren<SpriteRenderer>().flipX = false;
+		}
+        
+		
 
 	}
 }

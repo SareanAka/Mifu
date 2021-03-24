@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6932928755486930393}
   - component: {fileID: 6932928755486930392}
   - component: {fileID: 3821874118289998365}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6932928755930802998}
   - component: {fileID: 6932928755930802999}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tile_jungle_ground_brown (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6932928756024602476}
   - component: {fileID: 6932928756024602477}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tile_jungle_ground_brown (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6932928756152944446}
   - component: {fileID: 6932928756152944447}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tile_jungle_ground_brown (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6932928756642538321}
   - component: {fileID: 6932928756642538322}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tile_jungle_ground_brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}

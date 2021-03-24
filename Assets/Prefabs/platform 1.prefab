@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4241195170983704100}
   - component: {fileID: 718711322099321882}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tile_jungle_ground_grey (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,9 +93,8 @@ GameObject:
   - component: {fileID: 5019488054337323676}
   - component: {fileID: 8370852775637696760}
   - component: {fileID: 3260340531888339561}
-  - component: {fileID: 2946121461923381784}
   - component: {fileID: 3158283701016091143}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platform 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,27 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!50 &2946121461923381784
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6189077991181693753}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
 --- !u!61 &3158283701016091143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -224,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6095250336774355612}
   - component: {fileID: 4635289186427507511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tile_jungle_ground_grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}

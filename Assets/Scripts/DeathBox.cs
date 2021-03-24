@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class DeathBox : MonoBehaviour
+public class DeathBox : KillBox
 {
     public GameObject player;
-    [SerializeField] private Canvas canvas = null;
     public float xPos;
 
     // Start is called before the first frame update
@@ -19,11 +19,5 @@ public class DeathBox : MonoBehaviour
     {
         xPos = player.gameObject.transform.position.x;
         this.transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
-
-    }
-    private void OnCollisionEnter2D()
-    {
-        canvas.enabled = true;
-        Debug.Log("u ded");
     }
 }
