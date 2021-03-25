@@ -13,8 +13,16 @@ public class KillBox : MonoBehaviour
         sceneGameOver = currentScene;
     }
 
-    private void OnCollisionEnter2D()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene("Game Over");
+        if (collision.gameObject.CompareTag("MainChara"))
+        {
+            SceneManager.LoadScene("Game Over");
+        }
+
+        if (collision.gameObject.CompareTag("WoodBox"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

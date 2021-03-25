@@ -13,6 +13,7 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
 	[SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
+	[SerializeField] private Transform fireBallRotation;						// Get the rotation of the player attack
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
@@ -145,12 +146,11 @@ public class CharacterController2D : MonoBehaviour
         if (theScale)
         {
 			GetComponentInChildren<SpriteRenderer>().flipX = true;
+			fireBallRotation.rotation = new Quaternion(transform.rotation.x, 180, transform.rotation.z, 0);
 		} else
         {
 			GetComponentInChildren<SpriteRenderer>().flipX = false;
+			fireBallRotation.rotation = new Quaternion(transform.rotation.x, 0, transform.rotation.z, 0);
 		}
-        
-		
-
 	}
 }

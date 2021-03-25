@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2086870789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086870790}
+  m_Layer: 10
+  m_Name: FirePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2086870790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086870789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.075, y: -0.19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3096471147849623562}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3096471147497983615
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,9 +74,10 @@ GameObject:
   - component: {fileID: 3096471147849623567}
   - component: {fileID: 3096471147849623568}
   - component: {fileID: 3096471147849623569}
+  - component: {fileID: 422406754}
   m_Layer: 10
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: MainChara
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,6 +96,7 @@ Transform:
   - {fileID: 3096471148177211592}
   - {fileID: 3096471147497983614}
   - {fileID: 3096471148041191007}
+  - {fileID: 2086870790}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -145,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_JumpForce: 800
   m_CrouchSpeed: 0.615
-  m_MovementSmoothing: 0.3
+  m_MovementSmoothing: 0.1544
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
@@ -153,6 +185,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 3096471147497983614}
   m_CeilingCheck: {fileID: 3096471148177211592}
   m_CrouchDisableCollider: {fileID: 3096471147849623566}
+  fireBallRotation: {fileID: 2086870790}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
@@ -198,6 +231,20 @@ MonoBehaviour:
   controller: {fileID: 3096471147849623568}
   animatior: {fileID: 3096471148041191005}
   runSpeed: 40
+--- !u!114 &422406754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096471147849623570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792910d625837a548be81524ff81efff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePosition: {fileID: 2086870790}
+  projectiles: {fileID: 5604834570472203652, guid: e813de34a610562489ad13668a47f285, type: 3}
 --- !u!1 &3096471148041191008
 GameObject:
   m_ObjectHideFlags: 0
