@@ -468,6 +468,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1266191814}
     m_Modifications:
+    - target: {fileID: 4339413313217590100, guid: 7b0ad6380237a154299857bfca530c6b, type: 3}
+      propertyPath: currentScene
+      value: Level 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4339413313217590103, guid: 7b0ad6380237a154299857bfca530c6b, type: 3}
       propertyPath: m_Name
       value: Spikes (3)
@@ -831,6 +835,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1266191814}
     m_Modifications:
+    - target: {fileID: 4339413313217590100, guid: 7b0ad6380237a154299857bfca530c6b, type: 3}
+      propertyPath: currentScene
+      value: Level 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4339413313217590103, guid: 7b0ad6380237a154299857bfca530c6b, type: 3}
       propertyPath: m_Name
       value: Spikes (1)
@@ -1208,6 +1216,10 @@ PrefabInstance:
     - target: {fileID: 3096471147849623562, guid: a4b9dfa122b58dc42bff2863468d90c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3096471147849623568, guid: a4b9dfa122b58dc42bff2863468d90c4, type: 3}
+      propertyPath: jumpDelay
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3096471147849623570, guid: a4b9dfa122b58dc42bff2863468d90c4, type: 3}
       propertyPath: m_Name
@@ -2754,7 +2766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951443853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 283, y: -8.2, z: 101.25366}
+  m_LocalPosition: {x: 283, y: -8.26, z: 101.25366}
   m_LocalScale: {x: -3.196512, y: 2.2411754, z: 1}
   m_Children: []
   m_Father: {fileID: 388180246}
@@ -3223,6 +3235,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1266191814}
     m_Modifications:
+    - target: {fileID: 4339413313217590100, guid: 7b0ad6380237a154299857bfca530c6b, type: 3}
+      propertyPath: currentScene
+      value: Level 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4339413313217590103, guid: 7b0ad6380237a154299857bfca530c6b, type: 3}
       propertyPath: m_Name
       value: Spikes (2)
@@ -4793,7 +4809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763882963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.8, y: -8.24, z: 101.25366}
+  m_LocalPosition: {x: 64.8, y: -8.26, z: 101.25366}
   m_LocalScale: {x: -3.196512, y: 2.2411754, z: 1}
   m_Children: []
   m_Father: {fileID: 388180246}
@@ -4999,6 +5015,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1266191814}
     m_Modifications:
+    - target: {fileID: 4339413313217590100, guid: 7b0ad6380237a154299857bfca530c6b, type: 3}
+      propertyPath: currentScene
+      value: Level 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4339413313217590103, guid: 7b0ad6380237a154299857bfca530c6b, type: 3}
       propertyPath: m_Name
       value: Spikes
@@ -5181,7 +5201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988334133}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -44.41, y: -8.24, z: 101.25366}
+  m_LocalPosition: {x: -44.41, y: -8.26, z: 101.25366}
   m_LocalScale: {x: 2.5023205, y: 2.2411754, z: 1}
   m_Children: []
   m_Father: {fileID: 388180246}
