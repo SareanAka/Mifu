@@ -188,6 +188,7 @@ MonoBehaviour:
   fireBallRotation: {fileID: 2086870790}
   gravity: 1
   fallMultiplier: 5
+  jumpDelay: 0.15
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
@@ -259,7 +260,7 @@ GameObject:
   - component: {fileID: 3096471148041191006}
   - component: {fileID: 3096471148041191005}
   m_Layer: 10
-  m_Name: New Sprite
+  m_Name: PlayerGFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
