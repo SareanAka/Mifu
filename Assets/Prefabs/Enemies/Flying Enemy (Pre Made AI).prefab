@@ -130,10 +130,10 @@ GameObject:
   - component: {fileID: 1193362145318731389}
   - component: {fileID: 1193362145318731388}
   - component: {fileID: 1193362145318731363}
-  - component: {fileID: 1193362145318731384}
+  - component: {fileID: 252874902}
   m_Layer: 0
   m_Name: Flying Enemy (Pre Made AI)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 3096471147849623562, guid: a4b9dfa122b58dc42bff2863468d90c4, type: 3}
+  target: {fileID: 0}
 --- !u!58 &1193362145318731363
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -241,13 +241,13 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.010598421}
   serializedVersion: 2
   m_Radius: 0.97376466
---- !u!114 &1193362145318731384
+--- !u!114 &252874902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,7 +256,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1193362145318731362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0f7e65e2df0464dbc10d7a58c7ff66, type: 3}
+  m_Script: {fileID: 11500000, guid: f09a753ad0fe4064f87145db33ed4c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: Level 1
+  enemyHealth: 3
+  animatior: {fileID: 1193362143576932810}
