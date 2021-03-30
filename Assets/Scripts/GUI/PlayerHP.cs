@@ -7,10 +7,13 @@ public class PlayerHP : MonoBehaviour
 {
     [SerializeField]
     TextMeshProUGUI HPCounter;
+    [SerializeField]
+    TextMeshProUGUI CoinCounter;
 
     // Update is called once per frame
     void Update()
     {
         HPCounter.text = "Health: " + PlayerHealth.currentHealth;
+        CoinCounter.text = "Spirit Orbs : " + PlayerHealth.coinCounter;
     }
 }

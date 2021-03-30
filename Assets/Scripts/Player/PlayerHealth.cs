@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     static public string sceneGameOver;
     private bool playerJustGotHit;
     public static int currentHealth;
+    public static int coinCounter;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
         {
             playerJustGotHit = true;
             LoseHP();
+            CameraScript.TriggerShake(0.3f);
             StartCoroutine("PlayerHit");
             if (playerHealth <= 0)
             {
