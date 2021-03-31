@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public static int currentHealth;
     public static int coinCounter;
 
+
     private void Start()
     {
         sceneGameOver = currentScene;
@@ -27,8 +28,19 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") && playerJustGotHit == false)
         {
             playerJustGotHit = true;
-            LoseHP();
-            CameraScript.TriggerShake(0.3f);
+            if (PlayerShieldPower.isShieldActive == false)
+            {
+                LoseHP();
+                if (playerHealth >= 1)
+                {
+                    CameraScript.TriggerShake(0.2f);
+                }
+            }
+            else
+            {
+                PlayerShieldPower.isShieldActive = false;
+                CameraScript.TriggerShake(0.1f);
+            }
             StartCoroutine("PlayerHit");
             if (playerHealth <= 0)
             {

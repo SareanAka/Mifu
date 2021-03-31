@@ -8,7 +8,7 @@ public class GameOverScript : MonoBehaviour
     private string currentScene;
     private void Start()
     {
-        currentScene = KillBox.sceneGameOver;
+        currentScene = PlayerHealth.sceneGameOver;
     }
 
     public void LoadRetry()

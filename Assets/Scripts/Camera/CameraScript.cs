@@ -8,6 +8,8 @@ public class CameraScript : MonoBehaviour
     private static float shakeDuration = 0f;
     private float shakeMagnitude = 0.7f;
     private float dampingSpeed = 1.0f;
+    [SerializeField] float cameraOffsetX;
+    [SerializeField] float cameraOffsetY;
 
     public GameObject player;
     public static float xPos;
@@ -44,7 +46,7 @@ public class CameraScript : MonoBehaviour
             xPos = player.gameObject.transform.position.x;
 
             Vector3 currentPos = transformShake.gameObject.transform.position;
-            transformShake.gameObject.transform.position = Vector3.Lerp(currentPos, new Vector3(xPos + 13, transform.position.y, transform.position.z), fraction);
+            transformShake.gameObject.transform.position = Vector3.Lerp(currentPos, new Vector3(xPos + cameraOffsetX, cameraOffsetY, transform.position.z), fraction);
 
         }
 

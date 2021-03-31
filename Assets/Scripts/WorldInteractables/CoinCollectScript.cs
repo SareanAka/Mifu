@@ -16,6 +16,7 @@ public class CoinCollectScript : MonoBehaviour
                 collected = true;
                 Destroy(gameObject);
                 PlayerHealth.coinCounter += 1;
+                PlayerShieldPower.amountOfCoinsCollected += 1;
                 StartCoroutine("Collected");
             }
         }

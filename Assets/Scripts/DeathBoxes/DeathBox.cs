@@ -20,4 +20,12 @@ public class DeathBox : KillBox
         xPos = player.gameObject.transform.position.x;
         this.transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("MainChara"))
+        {
+            SceneManager.LoadScene("Game Over");
+        }
+    }
 }
