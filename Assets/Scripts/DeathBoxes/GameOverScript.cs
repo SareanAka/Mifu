@@ -9,6 +9,9 @@ public class GameOverScript : MonoBehaviour
     private void Start()
     {
         currentScene = PlayerHealth.sceneGameOver;
+        PlayerHealth.coinCounter = 0;
+        PlayerShieldPower.amountOfCoinsCollected = 0;
+        PlayerShieldPower.isShieldActive = false;
     }
 
     public void LoadRetry()
