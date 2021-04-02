@@ -36,7 +36,7 @@ public class CameraScript : MonoBehaviour
     {
         if (shakeDuration > 0)
         {
-            transformShake.localPosition = new Vector3((CameraScript.xPos + 14), initialPosition.y, initialPosition.z) + Random.insideUnitSphere * shakeMagnitude;
+            transformShake.localPosition = new Vector3((CameraScript.xPos + 10), initialPosition.y, initialPosition.z) + Random.insideUnitSphere * shakeMagnitude;
 
             shakeDuration -= Time.deltaTime * dampingSpeed;
         }

@@ -26,6 +26,11 @@ public class SpikesScript : KillBox
                 StartCoroutine("PlayerHit");
             }
         }
+
+        if (collision.gameObject.CompareTag("WoodBox"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     private IEnumerator PlayerHit()
